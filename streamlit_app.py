@@ -18,7 +18,7 @@ API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Set up Google Gemini-Pro AI model
 gpt.configure(api_key=API_KEY)
-model = gpt.GenerativeModel('gemini-2.0-flash')
+model = gpt.GenerativeModel('gemini-2.5-flash')
 
 # Initialize chat session in Streamlit if not already present
 if "chat_session" not in st.session_state:
